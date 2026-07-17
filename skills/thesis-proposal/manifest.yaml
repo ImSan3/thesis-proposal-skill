@@ -1,0 +1,49 @@
+name: thesis-proposal
+version: 1.0.0
+description: >
+  Declarative manifest for the thesis-proposal skill.
+  Defines classification axes, template sections, and content generation rules.
+
+always_load:
+  - static/core/workflow.md
+  - static/core/format-spec.md
+
+axes:
+  domestic_categories:
+    detect: |
+      Classify domestic references into 3 categories based on research theme.
+      Common themes: system construction, fund sustainability, participation status.
+    values:
+      system:     static/fragments/domestic/system.md
+      fund:       static/fragments/domestic/fund.md
+      practice:   static/fragments/domestic/practice.md
+    default: auto
+    multi: false
+
+  foreign_categories:
+    detect: |
+      Classify foreign references into 2 categories based on research theme.
+      Common themes: reform evaluation, sustainability & risk management.
+    values:
+      reform:     static/fragments/foreign/reform.md
+      risk:       static/fragments/foreign/risk.md
+    default: auto
+    multi: false
+
+  template_sections:
+    detect: |
+      Map generated content to template sections.
+    values:
+      purpose:          研究目的（~300字）
+      significance:     研究意义（~500字）
+      domestic:         国内研究现状
+      foreign:          国外研究现状
+      review:           文献综合述评
+      problems:         拟研究的主要问题（3个）
+      novelty:          新颖性（~250字）
+      methods:          拟采用的研究方法（2-3个）
+      outline:          论文大纲
+      references:       主要参考文献
+      schedule:         整体进度安排
+    default: all
+    multi: true
