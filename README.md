@@ -1,9 +1,9 @@
 <div align="center">
-  <h1>📝 Thesis Proposal Skill</h1>
-  <p><strong>面向中国本科毕业论文开题报告的智能生成技能</strong></p>
+  <h1>📚 Thesis Skills</h1>
+  <p><strong>面向中文开题报告、毕业论文解读与答辩准备的实用技能</strong></p>
   <p>
     <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-2ea44f"></a>
-    <a href="#6-技能索引"><img alt="Skills" src="https://img.shields.io/badge/skills-1-0ea5e9"></a>
+    <a href="#6-技能索引"><img alt="Skills" src="https://img.shields.io/badge/skills-2-0ea5e9"></a>
     <a href="#"><img alt="Language" src="https://img.shields.io/badge/language-中文-1f6feb"></a>
     <a href="#"><img alt="Platform" src="https://img.shields.io/badge/platform-Hermes%20%7C%20Codex%20%7C%20Claude%20Code-111827"></a>
   </p>
@@ -17,9 +17,9 @@
 
 ---
 
-`thesis-proposal` 面向中国本科毕业生，收录可复用的开题报告生成技能。强调**真实问题解决、标准化工作流与可直接使用的文档产物**。
+`thesis-proposal` 与 `thesis-companion` 面向中国本科毕业生，覆盖开题报告生成、论文解读和答辩准备。强调**可复用工作流与可直接使用的文档产物**。
 
-只需提供 **论文题目 + 研究内容 + 国内外参考文献**，即可一键生成符合学校模板的完整开题报告 `.docx` 文件。
+提供 **论文题目 + 研究内容 + 国内外参考文献**，可用 `thesis-proposal` 生成开题报告；上传已有的开题报告或毕业论文，可用 `thesis-companion` 生成批注讲解、速读指南和答辩问答文档。
 
 ## 目录
 
@@ -141,6 +141,7 @@
 | 生成开题报告 | `帮我写一个开题报告，题目是XXX，研究内容是XXX，参考文献如下...` |
 | 只做研究现状 | `先帮我分类这些参考文献，然后撰写国内外研究现状` |
 | 填充模板 | `我已经有了研究现状内容，请帮我填充到开题报告模板中` |
+| 解读论文并准备答辩 | `根据这篇论文生成批注讲解版、速读指南和答辩问题预测` |
 
 ## 5. 安装
 
@@ -173,6 +174,7 @@ npx skills add SannotTired/thesis-proposal-skill --agent claude-code --skill the
 | 技能名称 | 描述 | 适用场景 |
 |---------|------|---------|
 | **thesis-proposal** | 中国本科毕业论文开题报告生成 | 需要生成完整开题报告 .docx |
+| **thesis-companion** | 论文批注解读、速读指南与答辩问答 | 需要快速读懂开题报告或毕业论文并准备答辩 |
 
 ## 7. 贡献与开发
 
