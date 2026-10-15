@@ -1,7 +1,0 @@
-name: thesis-companion
-version: 1.0.0
-description: >
-  Explain Chinese thesis proposals and dissertations, create anchored Word comments,
-  student-friendly reading guides, tailored defense questions and answers, and optional
-  blue-white defense slides after asking the user.
-entrypoint: SKILL.md
